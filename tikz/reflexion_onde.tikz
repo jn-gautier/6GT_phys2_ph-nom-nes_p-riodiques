@@ -1,0 +1,43 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+ 
+
+%<<<<<<<WARNING>>>>>>>
+% PGF/Tikz doesn't support hatch filling very well
+% Use PStricks for a perfect hatching export
+
+\usetikzlibrary[patterns]
+\begin{document}
+\definecolor{zzttqq}{rgb}{0.6,0.2,0}
+\definecolor{qqccqq}{rgb}{0,0.8,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-1.2602331330861973,-0.717181706078531) rectangle (8.42643140389387,7.690507643118455);
+\draw [shift={(5.7,3.68)},line width=2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (180:1.0483403178549857) arc (180:210.43630740906363:1.0483403178549857) -- cycle;
+\draw [shift={(5.7,3.68)},line width=2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (149.5636925909364:1.0483403178549857) arc (149.5636925909364:180:1.0483403178549857) -- cycle;
+\fill[line width=0pt,color=zzttqq,fill=zzttqq,pattern=north east lines,pattern color=zzttqq] (5.7,6.64) -- (5.7,0.68) -- (6.4,0.68) -- (6.4,6.64) -- cycle;
+\draw [line width=2pt] (5.7,0.68)-- (5.7,6.68);
+\draw [line width=2pt,color=ffqqqq] (0.56,0.66)-- (5.7,3.68);
+\draw [line width=2pt,color=ffqqqq] (3.197790362959488,2.20983013543534) -- (3.1777961625224096,2.088651564448614);
+\draw [line width=2pt,color=ffqqqq] (3.197790362959488,2.20983013543534) -- (3.0822038374775915,2.2513484355513844);
+\draw [line width=2pt,color=qqqqff] (5.7,3.68)-- (0.56,6.7);
+\draw [line width=2pt,color=qqqqff] (3.0622096370405125,5.229830135435341) -- (3.177796162522409,5.271348435551385);
+\draw [line width=2pt,color=qqqqff] (3.0622096370405125,5.229830135435341) -- (3.082203837477591,5.108651564448615);
+\draw [line width=2pt,color=qqccqq] (5.7,3.68)-- (3.08,3.68);
+\begin{scriptsize}
+\draw[color=black] (5.899931237863355,3.8064067654657325) node {$f$};
+\draw [fill=uuuuuu] (5.7,3.68) circle (2pt);
+\draw[color=uuuuuu] (5.784613802899307,3.879790587715582) node {$C$};
+\draw[color=qqwuqq] (4.7782070977585205,3.3346536224309893) node {$$\theta _i$$};
+\draw[color=qqwuqq] (4.704823275508671,4.162842473536428) node {$$\theta _r$$};
+\draw[color=qqccqq] (3.583099135403837,3.99510802267963) node {n};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}
