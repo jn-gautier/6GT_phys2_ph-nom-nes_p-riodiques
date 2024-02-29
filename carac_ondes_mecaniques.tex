@@ -3,7 +3,7 @@
 Quand deux ondes ou plus passent en même temps par une même région de l'espace, on observe que le déplacement réel est la somme vectorielle des déplacements causés par chaque onde individuelle.
 C'est le \motcle{principe de superposition des ondes}.
 Les illustrations ci-dessous présentent respectivement deux ondes puis la superposition de celles-ci.
-\begin{figure}[h]
+\begin{figure}[ht]
     \begin{tikzpicture}
         \definecolor{olivegreen}{RGB} {0,125,15}
         \tikzset{>=latex}
@@ -17,7 +17,7 @@ Les illustrations ci-dessous présentent respectivement deux ondes puis la super
     \caption{Une onde dont l'équation de l'élongation est donnée par \(y(t)=sin( \pi \cdot t) \)}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \begin{tikzpicture}
         \definecolor{olivegreen}{RGB} {0,125,15}
         \tikzset{>=latex}
@@ -31,7 +31,7 @@ Les illustrations ci-dessous présentent respectivement deux ondes puis la super
     \caption{Une onde dont l'équation de l'élongation est donnée par \(y(t)=sin(2 \cdot \pi \cdot t) \)}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \begin{tikzpicture}
         \definecolor{olivegreen}{RGB} {0,125,15}
         \tikzset{>=latex}
@@ -53,7 +53,7 @@ Les ondes simples qui se combinent pour former l'onde composite sont appelées \
 Les séries de Fourier se rencontrent dans la décomposition de signaux périodiques, dans l'étude des courants électriques, des ondes cérébrales, dans la synthèse sonore, le traitement d'images, etc.
 \newpage
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=.4\linewidth]{serie_fourier.png}
     \caption{Les quatre premières sommes partielles de la série de Fourier pour un signal carré.}
@@ -64,7 +64,7 @@ Les séries de Fourier se rencontrent dans la décomposition de signaux périodi
 \section{Réflexion des ondes}
 Lorsqu'une onde rencontre un obstacle ou qu'elle arrive à la fin du milieu dans lequel elle se propage, elle est au moins partiellement réfléchie.
 Une onde ne se réfléchi pas de la même manière selon que l'extrémité du milieu soit fixe ou mobile.
-\begin{figure}[h]
+\begin{figure}[ht]
     \begin{minipage}{.5\textwidth}
         \centering
         \includegraphics[width=.8 \linewidth]{reflexion_fixee.png}
@@ -119,7 +119,7 @@ Quand une onde quelconque rencontre une frontière entre deux milieux, une parti
 Lorsqu'une onde en deux ou trois dimensions traverse la frontière séparant deux milieux dans lesquels la vitesse de propagation n'est pas la même, l'onde transmise va changer de direction ; ce phénomène s'appelle la réfraction.
 Une analogie peut être faite avec une ligne de soldats qui pénètre progressivement sur un terrain dans lequel elle avance moins vite. La ligne des soldats est alors progressivement infléchie et lorsqu'ils seront tous passés dans le deuxième terrain, le front de leur déplacement ne sera plus parallèle à celui qu'ils avaient avant.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=.4\linewidth]{refraction_soldats.png}
     \caption{La réfraction d'une ligne de soldats.}
@@ -164,7 +164,7 @@ Lorsqu'une onde est réfractée en traversant une surface :
 La vitesse de propagation d'une onde sismique P traversant la frontière entre deux couches rocheuses augmente de 6,5 km/s à 8 km/s. Si l'angle d'incidence de l'onde avec la frontière est de \(30^{\circ}\), quel est l'angle de réfraction.
 
 \subsection{Lumière et indice de réfraction}
-La loi de Lenz s'applique évidement pour la lumière, cette dernière se comportant comme une onde. Dans le cas de la lumière, il existe une vitesse de référence : la vitesse dans le vide : \(c \approx 3 \times 10^8 [m/s]\). Il est donc plus commode de travailler avec un indice de réfraction : le rapport entre \(c\) et la vitesse de la lumière dans le milieu considéré : \(n_i=\frac{c}{v_i}\) . L'indice de réfraction varie en fonction de la longueur d'onde et des caractéristiques du milieu (matière, pression, température, …).
+La loi de Lenz s'applique évidement pour la lumière, cette dernière se comportant comme une onde. Dans le cas de la lumière, il existe une vitesse de référence : la vitesse dans le vide : \(c \approx 3 \times 10^8 [m/s]\). Il est donc plus commode de travailler avec un indice de réfraction : le rapport entre \(c\) et la vitesse de la lumière dans le milieu considéré : \(n_i=\frac{c}{v_i}\) . L'indice de réfraction varie en fonction de la longueur d'onde et des caractéristiques du milieu (matière, pression, température, \ldots).
 \begin{itemize}
     \item Réécris la loi de Lenz en l'exprimant à partir des indices de réfraction des deux milieux traversés.
     \item Montre qu'un rayon lumineux passant successivement d'un milieu \enquote{1} vers un milieu \enquote{2} puis à nouveau vers le milieu \enquote{1} ressort parallèlement au rayon d'origine.
@@ -178,7 +178,7 @@ Aussi longtemps qu'une onde ne change pas de milieu ou ne rencontre pas d'obstac
 L'illustration \ref{fig:diffraction_I}, montre qu'une zone d'ombre se forme derrière un obstacle, mais qu'elle disparaît progressivement. L'illustration \ref{fig:diffraction_II}, montre que la zone d'ombre est d'autant plus grande que l'obstacle est grand.
 Mais par rapport à quoi l'obstacle doit-il être grand ou petit ? C'est le rapport entre la largeur de celui-ci et la longueur d'onde qui détermine l'importance de l'ombre et on en déduit que les obstacles deviennent pratiquement \enquote{invisibles} lorsque leur taille est comparable ou inférieur à la longueur d'onde.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \begin{minipage}{.5\textwidth}
         \centering
         \includegraphics[width=.8 \linewidth]{diffraction_I.png}
@@ -202,7 +202,7 @@ Le principe de Huygens est simple et un lien clair peut être fait avec la réso
 \end{encadre}
 L'oeil ne distingue pas ces ondelettes, mais uniquement leur enveloppe. Le front de l'onde à un instant \(t+\delta t\) se déduit du front de cette onde à l'instant \(t\), en considérant que l'enveloppe des ondes secondaires d'Huygens s'est propagée pendant l'intervalle de temps \(\delta t\), comme le montre la figure ci-dessous.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=.4\linewidth]{principe_huygens.png}
     \caption{Principe de Huygens (illustration et commentaire de \enquote{osez-reussir-en-physique.com})}
@@ -211,7 +211,7 @@ L'oeil ne distingue pas ces ondelettes, mais uniquement leur enveloppe. Le front
 Chaque point de part et d'autre d'un obstacle se comporte comme une source ponctuelle et un front d'onde se reforme dès lors derrière ceux-ci.
 Lorsqu'une onde rencontre un obstacle complet comportant une fente étroite, celle-ci se comporte comme une source d'onde circulaire, ce phénomène est clairement visible dans l'illustration \ref{fig:diffraction_I} a et l'illustration \ref{fig:diffraction_IV}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \begin{minipage}{.5\textwidth}
         \centering
         \includegraphics[width=.8\linewidth]{diffraction_IV.png}
@@ -229,7 +229,7 @@ Lorsqu'une onde rencontre un obstacle complet comportant une fente étroite, cel
 \subsection{Applications}
 
 \begin{tcolorbox}[title=Ondes acoustiques]
-    Le son est une onde dont la fréquence est comprise entre 20 Hz (fréquence la plus grave) et 20 000 Hz (fréquence la plus aiguë). La fréquence de référence est la note \enquote{la} (\(f=440[Hz]\)) à laquelle correspond une longueur d'onde de \(\lambda=0,77[m]\). Une longueur d'onde de \(1 [m]\) est associée aux sons de \(340[Hz]\). On réalise que les objets du quotidien (table, chaise, armoire, ouverture de porte, …) permettent une bonne diffraction des sons, c'est la raison pour laquelle ils se propagent bien dans l'ensemble des espaces que nous occupons.
+    Le son est une onde dont la fréquence est comprise entre 20 Hz (fréquence la plus grave) et 20 000 Hz (fréquence la plus aiguë). La fréquence de référence est la note \enquote{la} (\(f=440[Hz]\)) à laquelle correspond une longueur d'onde de \(\lambda=0,77[m]\). Une longueur d'onde de \(1 [m]\) est associée aux sons de \(340[Hz]\). On réalise que les objets du quotidien (table, chaise, armoire, ouverture de porte, \ldots) permettent une bonne diffraction des sons, c'est la raison pour laquelle ils se propagent bien dans l'ensemble des espaces que nous occupons.
 \end{tcolorbox}
 
 \begin{tcolorbox}[title=Écholocation]
@@ -247,7 +247,7 @@ Lorsqu'une onde rencontre un obstacle complet comportant une fente étroite, cel
     Plus on descend en fréquence, plus les distances de détection sont grandes, mais on perd en finesse et les antennes deviennent très grandes et très lourdes. En pratique, les sonars actifs très basse fréquence ne descendent guère en dessous de 3 kHz. Les portées de détection n'excèdent pas quelques dizaines de kilomètres.
 \end{tcolorbox}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \begin{minipage}{.5\textwidth}
         \centering
         \includegraphics[width=.8\linewidth]{sonar.png}
@@ -266,7 +266,7 @@ Lorsqu'une onde rencontre un obstacle complet comportant une fente étroite, cel
 Quand deux ondes atteignent simultanément un même point, elles vont agir dessus en respectant le \motcle{principe de superposition}. Si ces deux ondes sont de même amplitude, mais en opposition de phase, elles vont s'annuler mutuellement, on parle dans ce cas d'\motcle{interférences destructives}.
 Si, au contraire, elles sont de même amplitude et en concordance de phase, elles vont se combiner et créer une \motcle{interférence constructive}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=.8\linewidth]{interference.png}
     \caption{Interférences constructives et destructives}
@@ -277,7 +277,7 @@ Si, au contraire, elles sont de même amplitude et en concordance de phase, elle
 \section{Interférences entre deux sources ponctuelles}
 Lorsque deux sources \textbf{en phase} et de \textbf{même amplitude} font vibrer le même milieu, chaque point de ce milieu va être affecté par les deux signaux. Il va donc y avoir une interférence des deux signaux en chaque point et une \motcle{figure d'interférence} va apparaître sur l'ensemble du milieu.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\linewidth]{interference_deux_sources.png}
     \caption{Figure d'interférence pour deux sources en phase à la surface de l'eau.}
@@ -311,7 +311,7 @@ La figure ci-dessous représente un milieu soumis à l'influence de deux sources
 
 \newpage
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\linewidth]{figure_interference.png}
     \caption{Figure d'interférence avec les lignes de tempête et de repos.}
@@ -326,7 +326,7 @@ Dans la figure ci-dessous, les points rouges correspondent à des interférences
           \pointilles{3}
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=.4\linewidth]{figure_interference_II.png}
     \caption{Figure d'interférence pour deux sources en phase.}
@@ -357,7 +357,7 @@ Par un raisonnement similaire, on comprend qu'un point subit des interférences 
 
 \newpage
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=.8\linewidth]{interference_difference_marche.png}
     \caption{La différence de marche vaut 4 lambda.}

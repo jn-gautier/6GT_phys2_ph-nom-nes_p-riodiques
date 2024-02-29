@@ -1,8 +1,11 @@
 %importation des packages
-\documentclass[11pt,twoside]{scrbook}
+\RequirePackage{pdfmanagement-testphase}
+\DocumentMetadata {lang=fr}
+\documentclass[fontsize=11pt,twoside=true,DIV=calc,parskip=half]{scrbook}
+\usepackage{scrhack}
 \usepackage{scrlayer-scrpage} %équivalent de fancyhdr pour kommascript
 \usepackage[french]{babel}
-\usepackage[babel=true]{csquotes} % csquotes va utiliser la langue définie dans babel
+\usepackage[autostyle=true]{csquotes} % csquotes va utiliser la langue définie dans babel
 \usepackage[shortlabels]{enumitem} %permet de faire \begin{enumerate}[a)]
 \usepackage{tabularx}
 \usepackage{amsmath} %formules mathématiques
@@ -48,7 +51,6 @@
 %\usepackage{libertine} la police libertine et T1 ne permettent pas d'afficher les smallcaps, ni les upper+bold.
 \usepackage[T1]{fontenc}
 
-
 %cadre
 \usepackage{framed}
 
@@ -84,8 +86,8 @@
 \onehalfspacing %interligne1.5
 \setlength{\parindent}{0pt} %pas de retrait en début de paragraphe
 \usepackage{caption}%mise en forme des légendes des figures
-\addtokomafont{caption}{\scriptsize \itshape}
-\addtokomafont{captionlabel}{\scriptsize \itshape}
+\addtokomafont{caption}{\scriptsize \slshape}
+\addtokomafont{captionlabel}{\scriptsize \slshape}
 
 
 %pieds de page utiliser scrlayer-scrpage
