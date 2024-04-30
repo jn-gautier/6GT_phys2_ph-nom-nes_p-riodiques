@@ -1,0 +1,74 @@
+
+
+%l'ensemble des figures ci-dessous représente l'élongation en fonction de la distance pour une onde où lambda=2, omega=pi, T=2,A=0.5
+%cette onde est représentée à différents instants
+\definecolor{color1}{HTML}{DB2556}
+\definecolor{color2}{HTML}{EA552D}
+\definecolor{color3}{HTML}{CFCF0C}
+\definecolor{color4}{HTML}{7DB31B}
+\definecolor{color5}{HTML}{096975}
+
+
+\begin{tikzpicture}%pour t=1
+    \tikzset{>=latex}
+    \tkzInit[xmin=0,xmax=5,ymin=-0.5,ymax=0.5,xstep=1,ystep=1]
+    \tkzDrawX[label={$x [m]$},right=5pt]
+    \tkzDrawY[label={$y [m]$},right=5pt]
+    \tkzFct[domain=0:1,color1,thick]{0.5*sin(pi-x*pi)}
+    %\tkzDefPointByFct(.125) \tkzGetPoint{A}\tkzDrawPoint[color1](A)
+    %\tkzDefPointByFct(.25) \tkzGetPoint{B}\tkzDrawPoint[color1](B)
+    %\tkzDefPointByFct(.375) \tkzGetPoint{C}\tkzDrawPoint[color1](C)
+    %\tkzDefPointByFct(.5) \tkzGetPoint{D}\tkzDrawPoint[color1](D)
+    %\tkzDefPointByFct(.625) \tkzGetPoint{E}\tkzDrawPoint[color1](E)
+    %\tkzDefPointByFct(.75) \tkzGetPoint{F}\tkzDrawPoint[color1](F)
+    %\tkzDefPointByFct(.875) \tkzGetPoint{G}\tkzDrawPoint[color1](G)
+    %\tkzDefPointByFct(0) \tkzGetPoint{H}\tkzDrawPoint[color1](H)
+    %\tkzDefPointByFct(1) \tkzGetPoint{I}\tkzDrawPoint[color1](I)
+
+    \tkzFct[domain=1:5,color1,thick]{0}
+    \tkzText[draw,color= color1,fill=color1!20,above right,rounded corners](1,.75) {\scriptsize \(t=1\)}
+\end{tikzpicture}
+
+\begin{tikzpicture}%pour t=2
+    \tikzset{>=latex}
+    \tkzInit[xmin=0,xmax=5,ymin=-0.5,ymax=0.5,xstep=1,ystep=1]
+    \tkzDrawX[label={$x [m]$},right=5pt]
+    \tkzDrawY[label={$y [m]$},right=5pt]
+    \tkzFct[domain=1:2,color2,thick]{0.5*sin(pi*2-x*pi)}
+    \tkzFct[domain=0:1,color2,thick]{0}
+    \tkzFct[domain=2:5,color2,thick]{0}
+    \tkzText[draw,color= color2,fill=color2!20,above right,rounded corners](1,.75) {\scriptsize \(t=2\)}
+\end{tikzpicture}
+
+\begin{tikzpicture}%pour t=3
+    \tikzset{>=latex}
+    \tkzInit[xmin=0,xmax=5,ymin=-0.5,ymax=0.5,xstep=1,ystep=1]
+    \tkzDrawX[label={$x [m]$},right=5pt]
+    \tkzDrawY[label={$y [m]$},right=5pt]
+    \tkzFct[domain=2:3,color3,thick]{0.5*sin(pi*3-x*pi)}
+    \tkzFct[domain=0:2,color3,thick]{0}
+    \tkzFct[domain=3:5,color3,thick]{0}
+    \tkzText[draw,color= color3,fill=color3!20,above right,rounded corners](1,.75) {\scriptsize \(t=3\)}
+\end{tikzpicture}
+
+\begin{tikzpicture}%pour t=4
+    \tikzset{>=latex}
+    \tkzInit[xmin=0,xmax=5,ymin=-0.5,ymax=0.5,xstep=1,ystep=1]
+    \tkzDrawX[label={$x [m]$},right=5pt]
+    \tkzDrawY[label={$y [m]$},right=5pt]
+    \tkzFct[domain=3:4,color4,thick]{0.5*sin(pi*4-x*pi)}
+    \tkzFct[domain=0:3,color4,thick]{0}
+    \tkzFct[domain=4:5,color4,thick]{0}
+    \tkzText[draw,color= color4,fill=color4!20,above right,rounded corners](1,.75) {\scriptsize \(t=4\)}
+\end{tikzpicture}
+
+\begin{tikzpicture}%pour t=5
+    \tikzset{>=latex}
+    \tkzInit[xmin=0,xmax=5,ymin=-0.5,ymax=0.5,xstep=1,ystep=1]
+    \tkzDrawX[label={$x [m]$},right=5pt]
+    \tkzDrawY[label={$y [m]$},right=5pt]
+    \tkzFct[domain=4:5,color5,thick]{0.5*sin(pi*5-x*pi)}
+    \tkzFct[domain=0:4,color5,thick]{0}
+    %\tkzFct[domain=4:5,color5,thick]{0}
+    \tkzText[draw,color= color5,fill=color5!20,above right,rounded corners](1,.75) {\scriptsize \(t=5\)}
+\end{tikzpicture}

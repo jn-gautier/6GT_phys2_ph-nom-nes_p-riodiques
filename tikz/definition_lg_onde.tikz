@@ -1,0 +1,20 @@
+
+
+\begin{tikzpicture}%pour t=0
+    \tikzset{>=latex}
+    \tkzInit[xmin=-2,xmax=8,ymin=-1,ymax=1,xstep=1,ystep=0.2]
+    \tkzDrawX[label={$x [m]$},right=5pt]
+    \tkzDrawY[label={$y [m]$},right=5pt]
+    \tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelYnode font=\tiny]
+    \tkzFct[domain=-8:8,red,thick]{sin(0.5*pi*x)}
+    \tkzFct[domain=-8:8,blue!40,line width=1,dashed]{1}
+    \tkzFct[domain=-8:8,blue!40,line width=1,dashed]{-1}
+
+    \tkzDefPoints{1/1/A,5/1/B,2/0/C,6/0/D}
+    \tkzDrawSegment[line width=2,|<->|](A,B)
+    \tkzLabelSegment[auto](A,B){\huge $\lambda$}
+
+    \tkzDrawSegment[line width=2,|<->|](C,D)
+    \tkzLabelSegment[auto](C,D){\huge $\lambda$}
+
+\end{tikzpicture}

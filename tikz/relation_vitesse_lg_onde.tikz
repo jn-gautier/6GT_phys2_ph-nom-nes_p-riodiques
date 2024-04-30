@@ -1,0 +1,89 @@
+
+
+%l'ensemble des figures ci-dessous représente l'élongation en fonction de la distance pour une onde où lambda=2, omega=pi, T=2,A=0.5
+%cette onde est représentée à différents instants
+%\definecolor{red}{RGB}{255,0,0}
+\definecolor{orange1}{RGB}{255,21,0}
+\definecolor{orange2}{RGB}{255,42,0}
+\definecolor{orange3}{RGB}{255,63,0}
+\definecolor{orange4}{RGB}{255,84,0}
+\definecolor{orange5}{RGB}{255,105,0}
+\definecolor{orange6}{RGB}{255,126,0}
+
+
+\begin{tikzpicture}%pour t=0
+    \tikzset{>=latex}
+    \tkzInit[xmin=0,xmax=5,ymin=-0.5,ymax=0.5,xstep=1,ystep=1]
+    \tkzDrawX[label={$x [m]$},right=5pt]
+    \tkzDrawY[label={$y [m]$},right=5pt]
+    \tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelYnode font=\tiny]
+    %\tkzFct[domain=0:0.5,red,thick]{0.5*sin(pi*0.5-x*pi)}
+    \tkzFct[domain=0:5,red,thick]{0}
+    \tkzText[draw,color= red,fill=red!20,above right,rounded corners](1,.75) {\scriptsize À l'instant \(t=0\)}
+\end{tikzpicture}
+
+\begin{tikzpicture}%pour t=T/4, cad t=0.5
+    \tikzset{>=latex}
+    \tkzInit[xmin=0,xmax=5,ymin=-0.5,ymax=0.5,xstep=1,ystep=1]
+    \tkzDrawX[label={$x [m]$},right=5pt]
+    \tkzDrawY[label={$y [m]$},right=5pt]
+    \tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelYnode font=\tiny]
+    \tkzFct[domain=0:0.5,orange1,thick]{0.5*sin(pi*0.5-x*pi)}
+    \tkzFct[domain=0.5:5,orange1,thick]{0}
+    \tkzText[draw,color= orange1,fill=orange1!20,above right,rounded corners](1,.75) {\scriptsize À l'instant \(t=\frac{T}{4}\)}
+\end{tikzpicture}
+
+\begin{tikzpicture}%pour t=T/2, cad t=1
+    \tikzset{>=latex}
+    \tkzInit[xmin=0,xmax=5,ymin=-0.5,ymax=0.5,xstep=1,ystep=1]
+    \tkzDrawX[label={$x [m]$},right=5pt]
+    \tkzDrawY[label={$y [m]$},right=5pt]
+    \tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelYnode font=\tiny]
+    \tkzFct[domain=0:1,orange2,thick]{0.5*sin(pi-x*pi)}
+    \tkzFct[domain=1:5,orange2,thick]{0}
+    \tkzText[draw,color= orange2,fill=orange2!20,above right,rounded corners](1,.75) {\scriptsize À l'instant \(t=\frac{T}{2}\)}
+\end{tikzpicture}
+
+\begin{tikzpicture}%pour t=3T/4, cad t=1.5
+    \tikzset{>=latex}
+    \tkzInit[xmin=0,xmax=5,ymin=-0.5,ymax=0.5,xstep=1,ystep=1]
+    \tkzDrawX[label={$x [m]$},right=5pt]
+    \tkzDrawY[label={$y [m]$},right=5pt]
+    \tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelYnode font=\tiny]
+    \tkzFct[domain=0:1.5,orange3,thick]{0.5*sin(pi*1.5-x*pi)}
+    \tkzFct[domain=1.5:5,orange3,thick]{0}
+    \tkzText[draw,color= orange3,fill=orange3!20,above right,rounded corners](1,.75) {\scriptsize À l'instant \(t=\frac{3T}{4}\)}
+\end{tikzpicture}
+
+\begin{tikzpicture}%pour t=T, cad t=2
+    \tikzset{>=latex}
+    \tkzInit[xmin=0,xmax=5,ymin=-0.75,ymax=0.75,xstep=1,ystep=1]
+    \tkzDrawX[label={$x [m]$},right=5pt]
+    \tkzDrawY[label={$y [m]$},right=5pt]
+    \tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelYnode font=\tiny]
+    \tkzFct[domain=0:2,orange4,thick]{0.5*sin(2*pi-x*pi)}
+    \tkzFct[domain=2:5,orange4,thick]{0}
+    \tkzText[draw,color= orange4,fill=orange4!20,above right,,rounded corners](1,.75) {\scriptsize À l'instant \(t=T\)}
+\end{tikzpicture}
+
+\begin{tikzpicture}%pour t=1.25T, cad t=2.5
+    \tikzset{>=latex}
+    \tkzInit[xmin=0,xmax=5,ymin=-0.5,ymax=0.5,xstep=1,ystep=1]
+    \tkzDrawX[label={$x [m]$},right=5pt]
+    \tkzDrawY[label={$y [m]$},right=5pt]
+    \tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelYnode font=\tiny]
+    \tkzFct[domain=0:2.5,orange5,thick]{0.5*sin(2.5*pi-x*pi)}
+    \tkzFct[domain=2.5:5,orange5,thick]{0}
+    \tkzText[draw,color= orange5,fill=orange5!20,above right,rounded corners](1,.75) {\scriptsize À l'instant \(t=\frac{5T}{4}\)}
+\end{tikzpicture}
+
+\begin{tikzpicture}%pour t=1.5T, cad t=3
+    \tikzset{>=latex}
+    \tkzInit[xmin=0,xmax=5,ymin=-0.5,ymax=0.5,xstep=1,ystep=1]
+    \tkzDrawX[label={$x [m]$},right=5pt]
+    \tkzDrawY[label={$y [m]$},right=5pt]
+    \tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelYnode font=\tiny]
+    \tkzFct[domain=0:3,orange6,thick]{0.5*sin(3*pi-x*pi)}
+    \tkzFct[domain=3:5,orange6,thick]{0}
+    \tkzText[draw,color= orange6,fill=orange6!20,above right,rounded corners](1,.75) {\scriptsize À l'instant \(t=\frac{6T}{4}\)}
+\end{tikzpicture}
